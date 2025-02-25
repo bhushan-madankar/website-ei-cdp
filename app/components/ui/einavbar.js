@@ -3,7 +3,6 @@ import { useRouter } from 'next/navigation'
 import "@/app/style.css"
 
 
-
 const Einavbar = () => {
 
  const router = useRouter();
