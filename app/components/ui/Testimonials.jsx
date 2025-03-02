@@ -5,73 +5,75 @@ const testimonials = [
   {
     name: "Bhushan Madankar",
     role: "Project Coordinator",
-    text: "Engineering Idea has been a game-changer for me. As a Project Coordinator, I've had the opportunity to lead groundbreaking projects in robotics and automation. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation. If you're passionate about engineering and want to work on real-world solutions, this is the place to be!",
+    text: "Engineering Idea has been a transformative experience. As a Project Coordinator, I've had the chance to innovate and develop automation solutions that push the boundaries of technology. The collaborative spirit here is unmatched!",
     image: "https://storage.googleapis.com/a1aa/image/csoT_oIC334d-ZXTMHkQjT082ukJEnUQSXsot-W_ocY.jpg",
   },
   {
     name: "Prathamesh Korde",
-    role: "Project Coordinator",
-    text: "Engineering Idea has been a game-changer for me. As a Project Coordinator, I've had the opportunity to lead groundbreaking projects in robotics and automation. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation. If you're passionate about engineering and want to work on real-world solutions, this is the place to be!",
+    role: "Front-End Developer",
+    text: "At Engineering Idea, I’ve worked on cutting-edge web applications that enhance user experience. The learning curve is steep, but the environment is incredibly supportive, making it the perfect place for innovation.",
     image: "https://storage.googleapis.com/a1aa/image/csoT_oIC334d-ZXTMHkQjT082ukJEnUQSXsot-W_ocY.jpg",
   },
   {
-    name: "karan yede",
-    role: "Project Coordinator",
-    text: "Engineering Idea has been a game-changer for me. As a Project Coordinator, I've had the opportunity to lead groundbreaking projects in robotics and automation. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation. If you're passionate about engineering and want to work on real-world solutions, this is the place to be!",
+    name: "Karan Yede",
+    role: "Designer",
+    text: "Designing user-friendly interfaces and visual elements at Engineering Idea has been an exhilarating experience. From creating UI/UX prototypes to branding, I’ve gained invaluable expertise in design principles.",
     image: "https://storage.googleapis.com/a1aa/image/csoT_oIC334d-ZXTMHkQjT082ukJEnUQSXsot-W_ocY.jpg",
   },
   {
     name: "Aditi Pande",
     role: "Database Developer",
-    text: "Being part of Engineering Idea has been an incredibly fulfilling experience. Organizing workshops, hackathons, and training sessions has allowed me to connect with industry experts and inspire budding engineers. This organization is not just about learning, it's about creating, innovating, and making a real impact. I highly recommend it to anyone who wants to grow in the field of engineering!",
+    text: "The exposure to real-world data challenges at Engineering Idea has enhanced my analytical skills. Organizing data-centric workshops and working on predictive analytics projects has been a game-changer for me!",
     image: "https://storage.googleapis.com/a1aa/image/tlpSiOnCf27lEFFsQ3jebZqEVPM9IyfAGHHJBjq3ewU.jpg",
   },
   {
     name: "Prachiti Kothekar",
-    role: "Backend Project Developer",
-    text: "Engineering Idea is more than just a club—it's a movement. As the Community Outreach Coordinator, I've seen firsthand how engineering can transform lives. From sustainable energy solutions to smart city initiatives, our projects are making a difference. This organization gives you a platform to use your engineering skills for social good while growing professionally and personally",
+    role: "Back-End Developer",
+    text: "Engineering Idea has been a game-changer for me. As a Backend Developer, I've had the opportunity to work on complex system architectures and optimize performance. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation.",
     image: "https://storage.googleapis.com/a1aa/image/tlpSiOnCf27lEFFsQ3jebZqEVPM9IyfAGHHJBjq3ewU.jpg",
   },
   {
     name: "Yashpal Chandewar",
     role: "Project Coordinator",
-    text: "Engineering Idea has been a game-changer for me. As a Project Coordinator, I've had the opportunity to lead groundbreaking projects in robotics and automation. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation. If you're passionate about engineering and want to work on real-world solutions, this is the place to be!",
+    text: "Engineering Idea has provided me with opportunities to work on high-performance backend systems. The exposure to various technologies and frameworks has been instrumental in my growth as a developer.",
     image: "https://storage.googleapis.com/a1aa/image/csoT_oIC334d-ZXTMHkQjT082ukJEnUQSXsot-W_ocY.jpg",
   },
   {
-    name: "onkar anantulwar",
-    role: "Project Coordinator",
-    text: "Engineering Idea has been a game-changer for me. As a Project Coordinator, I've had the opportunity to lead groundbreaking projects in robotics and automation. The best part is the collaborative environment—everyone is eager to share knowledge and push the boundaries of innovation. If you're passionate about engineering and want to work on real-world solutions, this is the place to be!",
+    name: "Onkar Anantulwar",
+    role: "Designer",
+    text: "Being a part of Engineering Idea has given me hands-on experience in creative visual storytelling and branding. I’ve learned how to craft compelling design experiences that resonate with users.",
     image: "https://storage.googleapis.com/a1aa/image/csoT_oIC334d-ZXTMHkQjT082ukJEnUQSXsot-W_ocY.jpg",
   },
 ];
 
 const TestimonialCard = ({ testimonial }) => (
-  <div className={`p-6 rounded-2xl shadow-md w-[500px] h-[300px] mx-auto relative ${testimonial.name === "Bhushan Madankar" ? "bg-white text-black" : "bg-blue-600 text-white"}`}>
-    <p className="mb-4 text-sm">{testimonial.text}</p>
-    <div className="absolute bottom-4 left-4 flex items-center">
-      <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
+  <div className="p-10 rounded-2xl shadow-xl w-[750px] h-[450px] mx-auto relative bg-gradient-to-r from-blue-500 to-purple-600 text-white transition-transform transform hover:scale-105 hover:shadow-2xl"> 
+    <p className="mb-8 text-xl font-light italic">"{testimonial.text}"</p>
+    <div className="absolute bottom-8 left-8 flex items-center">
+      <img src={testimonial.image} alt={testimonial.name} className="w-20 h-20 rounded-full border-4 border-white shadow-lg mr-6" />
       <div>
-        <h3 className="font-bold text-lg">{testimonial.name}</h3>
-        <p className="text-sm">{testimonial.role}</p>
+        <h3 className="font-bold text-3xl">{testimonial.name}</h3>
+        <p className="text-lg text-gray-200">{testimonial.role}</p>
       </div>
     </div>
   </div>
 );
 
 const Testimonials = () => (
-  <div className="max-w-5xl mx-auto p-8 overflow-hidden relative">
-    <h2 className="text-3xl font-bold text-center mb-6">What Our Coordinators Say</h2>
-    <div className="overflow-hidden h-[500px] flex flex-col items-center">
-      <motion.div 
-        className="flex flex-col space-y-6"
-        animate={{ y: ["0%", "-100%"] }}
-        transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
-      >
-        {[...testimonials, ...testimonials].map((testimonial, index) => (
-          <TestimonialCard key={index} testimonial={testimonial} />
-        ))}
-      </motion.div>
+  <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white p-16">
+    <div className="max-w-6xl w-full text-center">
+      <h2 className="text-6xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">What Our Coordinators Say</h2>
+      <div className="overflow-hidden h-[750px] flex flex-col items-center">
+        <motion.div 
+          className="flex flex-col space-y-12"
+          animate={{ y: ["0%", "-100%"] }}
+          transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+        >
+          {[...testimonials, ...testimonials].map((testimonial, index) => (
+            <TestimonialCard key={index} testimonial={testimonial} />
+          ))}
+        </motion.div>
+      </div>
     </div>
   </div>
 );
