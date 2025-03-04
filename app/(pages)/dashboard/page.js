@@ -11,6 +11,7 @@ import { getinfodata } from "@/_action/getinfo";
 import { GrUserAdmin } from "react-icons/gr";
 import Einavbar from "@/app/components/ui/einavbar";
 import Allcourse from "@/app/components/ui/allcourse";
+import Footer from "@/app/components/ui/footer";
 
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { v4 as uuidv4 } from 'uuid';
@@ -196,6 +197,7 @@ const Dashboard = () => {
  
 }
 </div>    
+<Footer />
       </div>
     );
 };
