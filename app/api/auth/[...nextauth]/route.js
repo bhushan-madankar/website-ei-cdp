@@ -18,8 +18,8 @@ const handler = NextAuth({
   providers: [
     // OAuth authentication providers...
     GithubProvider({
-        clientId: process.env.NEXTAUTH_Git_ID,
-        clientSecret: process.env.NEXTAUTH_Git_SECRET
+        clientId: process.env.NEXTAUTH_ID,
+        clientSecret: process.env.NEXTAUTH_SECRET
       }),
       GoogleProvider({
         clientId: process.env.NEXTAUTH_google_id,
